@@ -6,4 +6,4 @@ build:
   script:
   - docker build -t nodejs-hello-world:latest
   tags:
-    - shell
+    - docker

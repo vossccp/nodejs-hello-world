@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: hello-world-ingress
+  namespace: demo
+
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+  - host: demo.servicefreigabe.de
+    http:
+      paths:
+      - backend:
+          serviceName: hello-world
+          servicePort: 3000
+        path: /

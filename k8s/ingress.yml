@@ -8,7 +8,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: demo.servicefreigabe.de
+  - host: demo.meinedomain.de
     http:
       paths:
       - backend:
